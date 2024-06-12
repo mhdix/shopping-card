@@ -1,0 +1,119 @@
+*::before, *::after, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --color-bg-dark: #121212;
+    --color-dark: #1F1F1F;
+    --color-header: #BB86FC;
+    --color-item-100: #767676;
+    --color-item-200:#383838;
+    --color-item-300: #1F1F1F;
+    --color-blur-white-100: #D9D9D9;
+    --color-blur-white-200: rgba(234, 234, 234, 0.801);
+    --color-blur-white-300: rgba(243, 243, 243, 0.801);
+    --color-blur-white-400: rgba(250, 250, 250, 0.801);
+    --border-radius-sm: 5px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 15px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    background-color: var(--color-bg-dark);
+
+}
+
+/* MODIFIRE  */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.blcok {
+    padding: 2rem;
+}
+
+button:hover {
+    background-color: #ffffff1b;
+    color: #d5d5d5  ;
+    scale: 1.05;
+}
+.btn {
+    background-color: transparent;
+    color: var(--color-blur-white);
+    border: 1px var(--color-blur-white) solid;
+    padding: 1rem 1.9rem;
+    border-radius: 0.6rem ;
+}
+
+.btn--primary {
+    border: 1px solid var(--color-header);
+}
+.bg-dark-100 {
+    background-color: var(--color-item-100);
+}
+.bg-dark-200 {
+    background-color: var(--color-item-200);
+}
+.bg-dark-200 {
+    background-color: var(--color-item-300);
+}
+/* header */
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    background-color: var(--color-dark);
+    color: var(--color-header);
+}
+/* product */
+.product-box {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 1rem;
+    /* border-radius: var(--border-radius-lg); */
+}
+
+.product-box__item {
+    margin: 1.5rem 4.5rem;
+    display: grid;
+    background-color:var(--color-item-200);
+    color: var(--color-blur-white-100);
+    border-radius: var(--border-radius-lg);
+
+    
+
+}
+.product-box__image {
+    overflow: hidden ;
+}
+.product-box__image img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0 ;
+    overflow: hidden;
+}
+.product-box__caption {
+    display: flex;
+    padding: 0; 
+    width: 100%;
+    padding: 1.5rem;    
+    align-items: center;
+    justify-content: space-between;
+}
+.product-box__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 0  1rem 0 ;
+}
