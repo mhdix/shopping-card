@@ -23,7 +23,7 @@
                 Mahdi Shopp
             </div>
             <div class="header__action">
-                <button class="btn btn--primary">Buy</button>
+                <button class="btn btn--primary openModalBtn">Product List</button>
             </div>
         </header>
     </article>
@@ -81,34 +81,62 @@
             </div>
 
             <!-- modal -->
-            <button id="openModalBtn">Open Modal</button>
-
             <!-- The Modal -->
-            <div id="myModal" class="cart">
+            <div id="myModal" class="cart showModal">
                 <!-- Modal content -->
                 <div class="cart-content">
                     <span class="close">&times;</span>
                     <h2 class="cart-title">Modal Header</h2>
                     <!-- single item -->
                     <div class="cart-item">
-                        <img src="" alt="" class="cart-item-img">
-                        <div class="cart-item desc">
-                            <h4>title</h4>
+                        <img src="image/download (1).jpg" alt="" class="cart-item-img">
+                        <div class="cart-item-desc">
+                            <h4>the best bed</h4>
                             <h5>5$</h5>
                         </div>
                         <div class="cart-item-controller">
-                            <i class="fas fa-chevron-up"></i>
-                            <p>1</p>
-                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-chevron-up green"></i>
+                            <p class="blue" style="font-weight: bolder;">1</p>
+                            <i class="fas fa-chevron-down red"></i>
                         </div>
+                        <i class="fas fa-recycle red"></i>
                     </div>
-                </div>
-                <div class="cart-footer">
-                    <span class="cart-total">total price : </span>
-                    <div class="btn clear-cart">clear cart</div>
-                    <div class="btn cart-item-comfirm">comfirm</div>
+                    <div class="cart-item">
+                        <img src="image/download (1).jpg" alt="" class="cart-item-img">
+                        <div class="cart-item-desc">
+                            <h4>the best bed</h4>
+                            <h5>5$</h5>
+                        </div>
+                        <div class="cart-item-controller">
+                            <i class="fas fa-chevron-up green"></i>
+                            <p class="blue" style="font-weight: bolder;">1</p>
+                            <i class="fas fa-chevron-down red"></i>
+                        </div>
+                        <i class="fas fa-recycle red"></i>
+                    </div>  
+                    
+                    <div class="cart-item">
+                        <img src="image/download (1).jpg" alt="" class="cart-item-img">
+                        <div class="cart-item-desc">
+                            <h4>the best bed</h4>
+                            <h5>5$</h5>
+                        </div>
+                        <div class="cart-item-controller">
+                            <i class="fas fa-chevron-up green"></i>
+                            <p class="blue" style="font-weight: bolder;">1</p>
+                            <i class="fas fa-chevron-down red"></i>
+                        </div>
+                        <i class="fas fa-recycle red"></i>
+                    </div>
+                          
+                    <div class="cart-footer">
+                        <span class="cart-total">total price : </span>
+                        <div class="btn clear-cart">clear cart</div>
+                        <div class="btn cart-item-comfirm">comfirm</div>
+                    </div>
                 </div>
             </div>
     </section>
+    <script src="app.js"></script>
 </body>
 </html>

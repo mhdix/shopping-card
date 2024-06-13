@@ -66,6 +66,15 @@ button:hover {
 .bg-dark-200 {
     background-color: var(--color-item-300);
 }
+.red {
+    color: rgba(179, 0, 0, 0.766);
+}
+.green {
+    color: rgba(0, 96, 0, 0.629);
+}
+.blue {
+    color: rgba(0, 0, 160, 0.718);
+}
 /* header */
 .header{
     display: flex;
@@ -77,8 +86,9 @@ button:hover {
 }
 /* product */
 .product-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product-box__item {
@@ -88,7 +98,9 @@ button:hover {
     background-color:var(--color-item-200);
     color: var(--color-blur-white-100);
     border-radius: var(--border-radius-lg);
-
+    max-width: 30rem;
+    width: 30rem;
+    /* margin: 1.5rem auto; */
     
 
 }
@@ -118,6 +130,21 @@ button:hover {
     justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+.product-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    
+}
+}
+@media screen and (min-width: 1024px) {
+ .product-box {
+    grid-template-columns: repeat(3, 1fr);
+}   
+}
+
 /* modal */
 /* The Modal (background) */
 .cart {
@@ -135,11 +162,14 @@ button:hover {
 
 /* Modal Content */
 .cart-content {
+    position: relative;
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  /* width: 30%;  */
+  width: 100%;
+  max-height: 450px; 
+  overflow-y: scroll;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
@@ -157,6 +187,39 @@ button:hover {
   text-decoration: none;
   cursor: pointer;
 }
-#myModal {
-    display: block;
+.showModal {
+     display: none;
+}
+.cart-footer {
+}
+.cart-item {
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5rem;
+}
+.cart-item-img {
+    height: 80px;
+    width: fit-content;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-grow: -1;
+}
+.cart-item-controller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+.cart-content {
+    margin: 5% auto; /* 15% from the top and centered */
+    width: 80%;
+}   
+}
+@media screen and (min-width: 1024px) {
+.cart-content {
+    width: 40%;
+}   
 }
