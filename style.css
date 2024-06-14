@@ -85,6 +85,10 @@ button:hover {
     color: var(--color-header);
 }
 /* product */
+.product {
+    display: flex;
+    justify-content: center;
+}
 .product-box {
     display: flex;
     flex-direction: column;
@@ -99,7 +103,7 @@ button:hover {
     color: var(--color-blur-white-100);
     border-radius: var(--border-radius-lg);
     max-width: 30rem;
-    width: 30rem;
+    width: 30rem;   
     /* margin: 1.5rem auto; */
     
 
@@ -141,6 +145,7 @@ button:hover {
 }
 @media screen and (min-width: 1024px) {
  .product-box {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
 }   
 }
@@ -197,7 +202,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 1.5rem;
 }
 .cart-item-img {
     height: 80px;
