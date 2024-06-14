@@ -1,8 +1,8 @@
 export const productsData = [
-      {
+  {
     id: "1",
     title: "queen panel bed",
-    price: 10.99,
+    price: 11,
     imageUrl: "./image/download.jpg",
   },
   {
